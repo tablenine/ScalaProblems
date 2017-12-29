@@ -1,6 +1,7 @@
 /bin/
 /target/
 /.settings/
+/.worksheet/
 /project/target/
 /project/project/
 .cache-main
