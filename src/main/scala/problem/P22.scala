@@ -35,13 +35,14 @@ object P22 extends App {
     }
 
   def range(s: Int, e: Int): List[Int] = {
+    @tailrec
     def subRange(s: Int, e: Int, result: List[Int]): List[Int] = {
       if (s > e) result
       else subRange(s + 1, e, result :+ s)
     }
     subRange(s, e, List())
-
   }
+
   val result = range(4, 9)
   println(result)
   val result2 = range(-2, 9)
